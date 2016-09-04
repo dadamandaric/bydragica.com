@@ -1,0 +1,18 @@
+<section class="collabs">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8 col-md-offset-2">
+        <div class="row">
+          {% for collab in site.data.collabs %}
+          <div class="col-md-4">
+            <div class="collab">
+              <a class="collab__photo" href="{{ collab.photo.link }}" style="background: url('/img/{{ collab.photo.image }}')" target="_blank"></a>
+              <a class="collab__caption" href="{{ collab.caption.link }}" target="_blank">{{ collab.caption.text }}</a>
+            </div>
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

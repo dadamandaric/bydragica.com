@@ -3,37 +3,96 @@
 ---
 @charset "utf-8";
 
-// Our variables
-$base-font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-$base-font-size:   16px;
-$base-font-weight: 400;
-$small-font-size:  $base-font-size * 0.875;
-$base-line-height: 1.5;
+body {
+  font-family: 'Karla', sans-serif;
+  color: #747474;
+  font-size: 18px;
+  margin-top: 140px;
+  margin-bottom: 140px;
+}
 
-$spacing-unit:     30px;
+a {
+  color: #747474;
+  border-bottom: solid 2px #00BD92;
 
-$text-color:       #111;
-$background-color: #fdfdfd;
-$brand-color:      #2a7ae2;
+  &:hover {
+    color: #747474;
+    text-decoration: none;
+  }
+}
 
-$grey-color:       #828282;
-$grey-color-light: lighten($grey-color, 40%);
-$grey-color-dark:  darken($grey-color, 25%);
+.header {
+  text-align: center;
 
-// Width of the content area
-$content-width:    800px;
+  &__logo {
+    font-family: 'Great Vibes', cursive;
+    margin-bottom: 140px;
+    color: #333;
+    font-size: 44px;
+  }
+}
 
-$on-palm:          600px;
-$on-laptop:        800px;
+.collabs {
+  margin-top: 140px;
 
-// Minima also includes a mixin for defining media queries.
-// Use media queries like this:
-// @include media-query($on-palm) {
-//     .wrapper {
-//         padding-right: $spacing-unit / 2;
-//         padding-left: $spacing-unit / 2;
-//     }
-// }
+  .collab {
+    display: block;
+    text-align: center;
 
-// Import partials from the `minima` theme.
-@import "minima";
+    &__photo {
+      border: none;
+      display: inline-block;
+      width: 100%;
+      height: 230px;
+      background-position: center center;
+      background-size: cover !important;
+    }
+
+    &__caption {
+      display: inline-block;
+      margin-top: 10px;
+      margin-bottom: 30px;
+    }
+  }
+}
+
+.footer {
+  margin-top: 140px;
+  text-align: center;
+}
+
+/* Large desktops and laptops */
+@media (min-width: 1200px) {
+
+}
+
+/* Landscape tablets and medium desktops */
+@media (min-width: 992px) and (max-width: 1199px) {
+
+}
+
+/* Portrait tablets and small desktops */
+@media (min-width: 768px) and (max-width: 991px) {
+  .collabs {
+    .collab {
+      &__photo {
+        height: 690px;
+      }
+    }
+  }
+}
+
+/* Landscape phones and portrait tablets */
+@media (max-width: 767px) {
+  .collabs {
+    .collab {
+      &__photo {
+        height: 460px;
+      }
+    }
+  }
+}
+
+/* Portrait phones and smaller */
+@media (max-width: 480px) {
+}
