@@ -21,8 +21,8 @@
     link: https://www.instagram.com/reartconcept/
 -
   photo:
-    image: farmbrothers1.jpg
-    link: https://www.instagram.com/p/BCp9hirOHZX/?taken-by=dadasworld
+    image: farmbrothers2.jpg
+    link: https://www.instagram.com/p/BHsEhqaBJvN/?taken-by=dadasworld
   caption:
     text: farmbrothers
     link: https://www.instagram.com/farmbrothers/
@@ -42,15 +42,15 @@
     link: https://www.instagram.com/acrossthegoals/
 -
   photo:
-    image: farmbrothers2.jpg
-    link: https://www.instagram.com/p/BHsEhqaBJvN/?taken-by=dadasworld
-  caption:
-    text: farmbrothers
-    link: https://www.instagram.com/farmbrothers/
--
-  photo:
     image: tyashulina1.jpg
     link: https://www.instagram.com/p/BCSpgWpOHdr/?taken-by=dadasworld
   caption:
     text: tyashulina
     link: https://www.instagram.com/tyashulina/
+-
+  photo:
+    image: farmbrothers1.jpg
+    link: https://www.instagram.com/p/BCp9hirOHZX/?taken-by=dadasworld
+  caption:
+    text: farmbrothers
+    link: https://www.instagram.com/farmbrothers/
