@@ -1,2 +1,33 @@
 <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="/js/instafeed.js"></script>
+<script type="text/javascript">
+  var feed = new Instafeed({
+    get: 'user',
+    sortBy: 'most-recent',
+    resolution: 'standard_resolution',
+    {% raw %}
+    template: '<a href="{{link}}" target="_blank" style="background-image: url(\'{{image}}\')"></a>',
+    {% endraw %}
+    limit: 14,
+    userId: '367633612',
+    clientId: '875bad43a9f648e3accad786a4357008',
+    accessToken: '367633612.875bad4.1eba6953f3144620843d767754dc8a2d',
+    after: function(images) {
+      resize_insta();
+    }
+  });
+  feed.run();
+
+  function resize_insta() {
+    var s = $("#instafeed a").width();
+
+    $("#instafeed a").each(function(i, elm) {
+      $(elm).height(s + "px");
+    });
+  }
+
+  window.onresize = function(event) {
+    resize_insta();
+  };
+</script>

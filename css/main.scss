@@ -4,11 +4,11 @@
 @charset "utf-8";
 
 body {
-  font-family: 'Karla', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   color: #747474;
-  font-size: 18px;
+  font-size: 16px;
   margin-top: 140px;
-  margin-bottom: 140px;
+  font-weight: 300;
 }
 
 a {
@@ -25,10 +25,10 @@ a {
   text-align: center;
 
   &__logo {
-    font-family: 'Great Vibes', cursive;
+    font-family: 'Qwigley', cursive;
+    color: #666;
+    font-size: 120px;
     margin-bottom: 140px;
-    color: #333;
-    font-size: 44px;
   }
 }
 
@@ -59,6 +59,46 @@ a {
 .footer {
   margin-top: 140px;
   text-align: center;
+}
+
+#instafeed {
+  display: flex;
+  flex-wrap: wrap;
+
+  a {
+    font-size: 16px;
+    display: inline-block;
+    width: 14.2857142857%;
+    text-decoration: none;
+    border: none;
+    background-size: cover;
+  }
+}
+
+.instabar {
+  margin-top: 140px;
+  text-align: center;
+  background-image: url("/img/bg.png");
+  background-repeat: repeat-x;
+
+  span {
+    background-color: #fff;
+    padding-left: 30px;
+    padding-right: 30px;
+    display: inline-block;
+
+    a {
+      display: inline-block;
+      margin-bottom: 20px;
+    }
+  }
+
+  hr {
+    border: none;
+    border-top: solid 1px #ccc;
+    margin-bottom: 40px;
+    margin-top: 10px;
+  }
 }
 
 /* Large desktops and laptops */
