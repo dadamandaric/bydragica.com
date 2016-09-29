@@ -27,7 +27,18 @@
     });
   }
 
+  function resize_collabs() {
+    var s = $(".collab__photo").width();
+
+    $(".collab__photo").each(function(i, elm) {
+      $(elm).height(s + "px");
+    });
+  }
+
   window.onresize = function(event) {
     resize_insta();
+    resize_collabs()
   };
+
+  resize_collabs();
 </script>

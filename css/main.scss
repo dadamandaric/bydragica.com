@@ -43,7 +43,6 @@ a {
       border: none;
       display: inline-block;
       width: 100%;
-      height: 320px;
       background-position: center center;
       background-size: cover !important;
     }
@@ -135,4 +134,9 @@ a {
 
 /* Portrait phones and smaller */
 @media (max-width: 480px) {
+  .header {
+    &__logo {
+      font-size: 80px;
+    }
+  }
 }
