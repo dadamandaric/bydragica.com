@@ -21,18 +21,18 @@
     link: https://www.instagram.com/reartconcept/
 -
   photo:
-    image: farmbrothers2.jpg
-    link: https://www.instagram.com/p/BHsEhqaBJvN/?taken-by=dadasworld
-  caption:
-    text: Farm Brothers
-    link: https://www.instagram.com/farmbrothers/
--
-  photo:
     image: trigore1.jpg
     link: https://www.instagram.com/p/BJu4R5thCvL/?taken-by=dadasworld
   caption:
     text: Tri Gore
     link: https://www.instagram.com/tri.gore/
+-
+  photo:
+    image: farmbrothers2.jpg
+    link: https://www.instagram.com/p/BHsEhqaBJvN/?taken-by=dadasworld
+  caption:
+    text: Farm Brothers
+    link: https://www.instagram.com/farmbrothers/
 -
   photo:
     image: richmondandfinch.jpg
