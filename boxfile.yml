@@ -1,0 +1,9 @@
+run.config:
+  engine: ruby
+  engine.config:
+    runtime: ruby-2.4
+
+  dev_packages:
+    - inotify-tools
+
+  fs_watch: true

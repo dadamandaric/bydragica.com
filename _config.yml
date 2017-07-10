@@ -5,3 +5,5 @@ description: >
 baseurl: ""
 url: "https://bydragica.com"
 markdown: kramdown
+port: 8080
+host: 0.0.0.0
